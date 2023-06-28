@@ -1,14 +1,20 @@
 # decision_trees
 Machine Learning -  Decision Tree, Random Forest from the scikit-learn library and XGBoost
 
-#Dataset
+# Dataset
+
 This dataset is obtained from Kaggle: Heart Failure Prediction Dataset
-#Context
-Cardiovascular disease (CVDs) is the number one cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worldwide. Four out of five CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common event caused by CVDs.
-People with cardiovascular disease or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management.
-This dataset contains 11 features that can be used to predict possible heart disease.
-Let's train a machine learning model to assist with diagnosing this disease.
-Attribute Information
+
+
+# Context
+
+- Cardiovascular disease (CVDs) is the number one cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worldwide. Four out of five CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common event caused by CVDs.
+- People with cardiovascular disease or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management.
+- This dataset contains 11 features that can be used to predict possible heart disease.
+- Let's train a machine learning model to assist with diagnosing this disease.
+
+# Attribute Information
+
 Age: age of the patient [years]
 Sex: sex of the patient [M: Male, F: Female]
 ChestPainType: chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]
