@@ -62,3 +62,18 @@ Remember that for a Random Forest, we randomly choose a subset of the features A
 - So setting n_jobs higher will increase how many CPU cores it will use. Note that the numbers very close to the maximum cores of your CPU may impact on the       overall performance of your PC and even lead to freezes.
 - Changing this parameter does not impact on the final result but can reduce the training time.
 - We will run the same script again, but with another parameter, n_estimators, where we will choose between 10, 50, and 100. The default is 100.
+
+  # XGBoost
+  
+- Gradient Boosting model, called XGBoost. The boosting methods train several trees, but instead of them being uncorrelated to each other, now the trees are fit one after the other in order to minimize the error.
+
+- The model has the same parameters as a decision tree, plus the learning rate.
+
+- The learning rate is the size of the step on the Gradient Descent method that the XGBoost uses internally to minimize the error on each train step.
+  One interesting thing about the XGBoost is that during fitting, it can take in an evaluation dataset of the form (X_val,y_val).
+
+- On each iteration, it measures the cost (or evaluation metric) on the evaluation datasets.
+  Once the cost (or metric) stops decreasing for a number of rounds (called early_stopping_rounds), the training will stop.
+  More iterations lead to more estimators, and more estimators can result in overfitting.
+- By stopping once the validation metric no longer improves, we can limit the number of estimators created, and reduce overfitting.
+
